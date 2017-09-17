@@ -8,7 +8,7 @@
 	"copyright": "Copyright (c) 2017 Matthew Brennan Jones",
 	"license": "BSL-1.0",
 	"importPaths": ["source/"],
-	"targetPath": "build",
+	"targetPath": "lib",
 
 	"configurations": [
 		{
@@ -16,6 +16,7 @@
 			"targetName": "DerelictSQLite3",
 			"targetType": "staticLibrary",
 			"dependencies": {
+				"derelict-util": "~>3.0.0-beta.1",
 			},
 		},
 		{
@@ -24,6 +25,7 @@
 			"targetType": "executable",
 			"mainSourceFile": "test/main.d",
 			"dependencies": {
+				"derelict-util": "~>3.0.0-beta.1",
 				"bdd": "~>1.3.0",
 			},
 		},
