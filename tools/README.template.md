@@ -10,7 +10,7 @@ FIXME
 
 # Documentation
 
-[https://workhorsy.github.io/DerelictSQLite3/0.1.0/](https://workhorsy.github.io/DerelictSQLite3/0.1.0/)
+[https://workhorsy.github.io/DerelictSQLite3/$VERSION/](https://workhorsy.github.io/DerelictSQLite3/$VERSION/)
 
 # Generate documentation
 

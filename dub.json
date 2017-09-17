@@ -1,0 +1,31 @@
+{
+	"name": "derelict-sqlite3",
+	"description": "Dynamic bindings to the SQLite library for the D Programming Language",
+	"authors": [
+		"Matthew Brennan Jones <matthew.brennan.jones@gmail.com>",
+	],
+	"homepage": "https://github.com/workhorsy/DerelictSQLite3",
+	"copyright": "Copyright (c) 2017 Matthew Brennan Jones",
+	"license": "BSL-1.0",
+	"importPaths": ["source/"],
+	"targetPath": "build",
+
+	"configurations": [
+		{
+			"name": "default",
+			"targetName": "DerelictSQLite3",
+			"targetType": "staticLibrary",
+			"dependencies": {
+			},
+		},
+		{
+			"name": "unittest",
+			"targetName": "DerelictSQLite3-test",
+			"targetType": "executable",
+			"mainSourceFile": "test/main.d",
+			"dependencies": {
+				"bdd": "~>1.3.0",
+			},
+		},
+	],
+}
