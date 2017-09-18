@@ -5,17 +5,24 @@ Dynamic bindings to the SQLite library for the D Programming Language
 
 ```d
 FIXME
-
 ```
 
 # Documentation
 
-[https://workhorsy.github.io/DerelictSQLite3/$VERSION/](https://workhorsy.github.io/DerelictSQLite3/$VERSION/)
+These functions are supported so far:
+
+```d
+int sqlite3_open(const(char)* filename, sqlite3** ppDb);
+int sqlite3_close(sqlite3*);
+const(char)* sqlite3_errmsg(sqlite3*);
+int sqlite3_exec(sqlite3*, const(char)* sql, int function(void*, int, char**, char**) callback, void*, char** errmsg);
+void sqlite3_free(void*);
+```
 
 # Generate documentation
 
 ```
-dub --build=docs
+FIXME
 ```
 
 # Run unit tests
