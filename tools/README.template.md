@@ -31,6 +31,6 @@ FIXME
 dub test
 ```
 
-[![Dub version](https://img.shields.io/dub/v/DerelictSQLite3.svg)](https://code.dlang.org/packages/DerelictSQLite3)
-[![Dub downloads](https://img.shields.io/dub/dt/DerelictSQLite3.svg)](https://code.dlang.org/packages/DerelictSQLite3)
-[![License](https://img.shields.io/badge/license-BSL_1.0-blue.svg)](https://raw.githubusercontent.com/workhorsy/DerelictSQLite3/master/LICENSE)
+[![Dub version](https://img.shields.io/dub/v/unofficial-derelict-sqlite3.svg)](https://code.dlang.org/packages/unofficial-derelict-sqlite3)
+[![Dub downloads](https://img.shields.io/dub/dt/unofficial-derelict-sqlite3.svg)](https://code.dlang.org/packages/unofficial-derelict-sqlite3)
+[![License](https://img.shields.io/badge/license-BSL_1.0-blue.svg)](https://raw.githubusercontent.com/workhorsy/UnofficialDerelictSQLite3/master/LICENSE)
