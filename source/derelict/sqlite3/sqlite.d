@@ -3,8 +3,10 @@
 // Dynamic bindings to the SQLite library for the D Programming Language
 // https://github.com/workhorsy/DerelictSQLite3
 
+
 module derelict.sqlite3.sqlite;
 
-int herp() {
-	return 7;
+public {
+	import derelict.sqlite3.internal.sqlite_types;
+	import derelict.sqlite3.internal.sqlite_dynload;
 }
