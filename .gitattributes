@@ -1,1 +1,2 @@
 sqlite3/* linguist-vendored
+*.h linguist-language=C
