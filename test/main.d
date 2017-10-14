@@ -9,7 +9,7 @@ unittest {
 	import std.string : fromStringz, toStringz;
 	import std.stdio : stderr, stdout;
 
-	DerelictSQLite3.load(SharedLibVersion(3, 20, 1));
+	DerelictSQLite3.load();
 
 	describe("DerelictSQLite3",
 		it("Should connect to an existing database", delegate() {

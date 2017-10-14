@@ -22,11 +22,6 @@ class DerelictSQLite3Loader : SharedLibLoader {
      }
 
 protected:
-     override void configureMinimumVersion(SharedLibVersion minVersion)
-     {
-           missingSymbolCallback = &ddefaultMissingSymbolCallback;
-     }
-
      override void loadSymbols()
      {
            bindFunc(cast(void**)&sqlite3_open, "sqlite3_open");
@@ -34,12 +29,6 @@ protected:
            bindFunc(cast(void**)&sqlite3_errmsg, "sqlite3_errmsg");
            bindFunc(cast(void**)&sqlite3_exec, "sqlite3_exec");
            bindFunc(cast(void**)&sqlite3_free, "sqlite3_free");
-     }
-
-private:
-     ShouldThrow ddefaultMissingSymbolCallback(string symbolName)
-     {
-           return ShouldThrow.Yes;
      }
 }
 

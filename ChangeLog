@@ -1,3 +1,5 @@
 
+* Release 0.2.0
+	* Fixed Bug #1: Remove specifying library version with SharedLibVersion
 * Release 0.1.0
 	* Alpha Release
