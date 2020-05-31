@@ -5,16 +5,16 @@
 		"Matthew Brennan Jones <matthew.brennan.jones@gmail.com>"
 	],
 	"homepage": "https://github.com/workhorsy/UnofficialDerelictSQLite3",
-	"copyright": "Copyright (c) 2017 Matthew Brennan Jones",
+	"copyright": "Copyright (c) 2017-2020 Matthew Brennan Jones",
 	"license": "BSL-1.0",
-	"importPaths": ["source/"],
 	"targetPath": "lib",
+	"targetType": "staticLibrary",
 
 	"configurations": [
 		{
 			"name": "default",
 			"targetName": "derelict-sqlite3",
-			"targetType": "staticLibrary",
+			"importPaths": ["source/"],
 			"dependencies": {
 				"derelict-util": "~>2.0"
 			}
@@ -22,11 +22,11 @@
 		{
 			"name": "unittest",
 			"targetName": "derelict-sqlite3-test",
-			"targetType": "executable",
-			"mainSourceFile": "test/main.d",
+			"importPaths": ["source/", "test/"],
+			"sourceFiles": ["test/test.d"],
 			"dependencies": {
 				"derelict-util": "~>2.0",
-				"bdd": "~>1.3.0"
+				"bdd": "~>2.0.0"
 			}
 		}
 	]

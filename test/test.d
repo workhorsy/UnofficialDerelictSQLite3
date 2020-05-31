@@ -1,10 +1,8 @@
 
 
-import BDD;
-
-
 
 unittest {
+	import BDD;
 	import derelict.sqlite3.sqlite;
 	import std.string : fromStringz, toStringz;
 	import std.stdio : stderr, stdout;
@@ -43,8 +41,4 @@ unittest {
 			sqlite3_close(db);
 		}),
 	);
-}
-
-int main() {
-	return BDD.printResults();
 }
