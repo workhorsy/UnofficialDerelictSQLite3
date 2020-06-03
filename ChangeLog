@@ -1,4 +1,4 @@
-* Release 0.3.0
+06/02/2020 Release 0.3.0
 	* Fixed Bug #2: Make tests run without main for changes in dmd 2.090
 10/15/2017 Release 0.2.0
 	* Fixed Bug #1: Remove specifying library version with SharedLibVersion
